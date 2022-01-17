@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Waterfall&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+@media screen and (min-width: 800px) {
+
+  .container {
+    margin: 1em 2em;
+  }
+}
+
+/* OVERALL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+  }
+
+/* NAVBAR STYLING */
+.navbar {
+   background:rgb(41, 41, 41);
+    height: 140px;
+    justify-content: center;    
+    font-size: 1.2rem;
+    top: 0; 
+  }
+  
+
+/* GUCCI LOGO DIV - MAIN*/
+
+.middle{
+  width:auto;
+  text-align: center;
+  padding:20px;
+
+}
+/* GUCCI LOGO STYLING */
+
+.middle img{
+  height:25px;
+  margin-left: -130px;
+  margin-top:8px;
+  width:154px;
+  
+}
+
+
+/* NAVBAR LOCATION */
+.location-item a{ 
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.location-item a:hover{ 
+  color:grey;
+  
+}
+.location:first-child{
+  display: flex;
+}
+
+
+
+.location-item{
+  margin-left:1rem;
+  list-style: none;
+  margin-top: 30px;
+  font-size: small;
+
+}
+.location{
+  display: flex;
+  font-size: small;
+  margin-right:2rem;
+  list-style: none;
+  
+ 
+}
+
+/* SIGN IN OPTIONS STYLING - USER SECTION */
+
+.user-item a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+
+}
+
+.user-item a:hover {
+  color:grey;
+
+}
+
+
+
+/* NAVBAR CATEGORY SECTION & DROPDOWN */
+
+.category-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.category-list-item{
+  
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  margin-right:2rem;
+  font-weight:900;
+}
+
+.category-list-item a{
+  text-decoration: none;
+  color:rgb(241, 234, 234);
+  font-size: small;
+}
+
+.category-list-item ul a{
+  text-decoration: none;
+  color:rgb(32, 31, 31);
+  font-size: small;
+}
+
+
+.category-list li  ul {
+ 
+ position:absolute;
+ display: none;
+ text-decoration: none;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+ 
+ 
+}
+.category-list li:hover ul {
+  display: flex;
+  
+}
+
+.img-1 h4{
+  font-size: 18px;
+}
+
+.shipping{
+  margin-left: 40px;
+}
+
+
+.gift{
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+
+
+.category-list li ul{
+  height: 300px;
+  width: 40%;
+
+}
+
+
+
+.category-list-item ul li a {
+padding : 2px 20px;
+}
+
+
+
+
+.category-list-item a:hover{
+  color : grey;
+}
+
+
+.bag-sign-in:first-child{
+  display: flex;
+ 
+}
+
+
+
+.user-item{
+  margin-right:2rem;
+  list-style: none;
+  margin-top: 30px;
+  font-size: small;
+
+}
+.right{
+  justify-content: flex-end;
+}
+
+.user-section{
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  color:rgb(172, 166, 166);
+ 
+}
+
+/*---------------------------- MENU BAR FOR MOBILE VERSION ----------------------*/
+
+.toggle-button{
+  position: absolute;
+  top: 3rem;
+  right: 2.5rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width:22px;
+  height:30px;
+  right:30px;
+
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width:100px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  background-color:rgb(230, 224, 224);
+
+}
+.navbar-links li a{
+  padding: 20rem;
+  display: block;
+}
+
+.navbar-links a{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(49, 47, 47);
+}
+
+.navbar-links a:hover{
+  background-color:grey;
+}
+
+.navbar-links{
+  display: none;
+}
+
+/* ------------------------ FOR RESPONSIVE DESIGN FOR MOBILE VERSION------------------------*/
+
+ @media(max-width:1100px){
+   .toggle-button{
+     display:flex;
+   }
+
+
+  .middle , .right , .left{
+    display: none;
+  }
+  .navbar-links{
+    width:100%;
+    display: none;
+  }
+ 
+  
+   .navbar{
+    
+     flex-direction:column;
+     align-items: flex-start;
+   }
+   .navbar-links ul{
+    width:100%;
+    flex-direction:column;
+  }
+
+
+   .navbar-links li{
+     text-align: center;
+   }
+
+   .navbar-links li a{
+    padding: .5rem  20rem;
+  }
+
+  .navbar-links.active{
+    display: flex;
+  }
+
+  .main-text,
+  .buttons,
+  .product-heading,
+  .product-name,
+  .product-purchase-button-button
+  
+  {
+    width:70%;
+
+  }
+
+   .category-section{
+     display: none;
+   }
+ 
+
+   .bar{
+     width:100px;
+
+   }
+   .navbar{
+     flex-direction:column;
+     align-items:flex-start;
+   }
+
+   .bar {
+     width:100%;
+     flex-direction:column;
+   }
+ }
+
+
+
+/* ------------------SECTION-1 MAIN STYLING-------------------*/
+.main-text{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  top:-60px;
+ 
+}
+
+.main-text-heading{
+  font-size: 60px;
+  font-weight:bolder;
+  color: rgb(24, 23, 23);
+  font-family: 'Raleway', sans-serif;
+  
+  font-size: 3em;
+  margin-right: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  
+  top:-80px;
+  
+ 
+}
+
+.main-btn {
+   cursor: pointer;
+    border: 1px solid #1e2224;
+    background-color:transparent;
+    padding:15px;
+    color: #2f3130;
+    font-size: 1.2em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    margin-right: 40px;
+    width: 150px;
+    height: 70px;
+    border-color: white;
+    
+}
+
+.main-btn:hover{
+  background: black;
+  color: azure;
+}
+
+
+.hero-1{
+  background-color: rgb(233, 233, 233);
+  
+  padding:20em;
+  background-image: url('img/RealStyle_0407_Feature-988x612.jpg');
+ 
+  height: 20px;
+  background-size: cover; 
+  
+}
+
+.hero-2{
+  background-color: rgb(233, 229, 229);
+  margin:10px;  
+
+}
+
+.hero-2-img{
+  margin-right: 170px;
+}
+
+
+/* MAIN CONTENT SECTION - 2 SHOP THE LOOK PART */
+.hero-poster{
+  background-image: url("img/TRR-x-Gucci-Mens-2-e1601917156704.jpg");
+  padding:35vh;
+  
+  background-repeat: no-repeat;
+  size:100%;
+  display: flex;
+  background-size: cover;
+  margin:10px;
+  
+
+}
+.desc-2{
+  height:300px;
+  width:200px;
+  background-color: white;
+  text-align: center;
+  margin: 12px auto;
+  
+  float: left;
+
+}
+
+/* MAIN CONTENT SECTION - 3 PRODUCT */
+
+.hero-4{
+  padding:100px;
+  background-color: rgb(233, 233, 233);
+  margin:10px;
+
+}
+
+.product-heading-4{
+  color:grey;
+}
+
+.product-heading-div-4{
+  
+  padding:50px;
+
+
+}
+
+.product-pruchase-button{
+margin-top: 20px;
+background: rgb(32, 32, 32);
+padding: 20px 15px;
+font-size: 15px;
+color:rgb(184, 177, 177);
+cursor:10px;
+margin:10px;
+
+}
+
+.product-purchase-button-div{
+  margin-top: 30px;
+
+}
+
+.product-pruchase-button:hover{
+  background: #1e2224;
+  color: #f6fffa;
+}
+
+.product-name{
+
+  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  
+  
+}
+
+.product-name-div{
+  margin-top: 10px;
+}
+
+.hero{
+  text-align: center;
+
+}
+
+
+
+
+.product-heading{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+
+}
+
+
+
+
+
+/* MAIN CONTENT SECTION - 4*/
+
+.hero-3{
+  padding:50vh;
+  background-size:100%;
+  background-image: url("img/256193.jpg");
+  
+  size:50%;
+  display: flex;
+  margin:10px;
+  background-size: cover;
+  
+}
+
+.desc{
+  height:300px;
+  width:200px;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+
+ 
+}
+
+.desc-child p{
+  padding:20px;
+  font-family: 'Raleway', sans-serif;
+font-family: 'Waterfall', cursive;
+font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+
+}
+
+.desc-child button{
+  margin-top:40px;
+  text-decoration: none;
+  background: none;
+ padding: 10px 10px;
+ font-size: 15px;
+ color:rgb(49, 46, 46);
+ cursor:10px;
+}
+
+.desc-btn:hover{
+  color:#f4f4f5;
+  background-color: #1e2224;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- STORY SECTION --------------------------*/
+
+.stories{
+  display: flex; 
+  background-color: rgb(224, 224, 224);
+}
+
+.story-section{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  background-color: rgb(231, 226, 218);
+  margin:10px;
+
+}
+
+.story-section img{
+  width:500px;
+  height:auto;
+  margin:5px;
+  border:6px double black;
+
+}
+
+.stories-heading{
+  font-size: 50px;
+  font-weight:100;
+  text-decoration: underline;
+  
+}
+
+.story-header{
+  font-size: 60px;
+  font-weight:lighter;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+.story-button{
+  margin-top: 20px;
+background: none;
+padding: 10px 10px;
+font-size: 15px;
+color:rgb(49, 46, 46);
+cursor:10px;
+margin:10px;
+
+}
+
+.story-button:hover{
+  color:white;
+  background-color: black;
+}
+
+
+
+
+
+
+.span{
+  align-items: center;
+
+}
+
+.figure{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+ /*---------------------------- FOOTER STYLING --------------------------- */
+
+footer{
+
+  font-family: "Monsterrat" , sans-serif;
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 20px 20%;
+  background-color:rgb(41, 36, 36);
+  color: rgb(209, 208, 208);
+  position:relative;
+    height: 400px;
+  
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+  
+}
+
+
+footer li{
+  list-style-type: none;
+  padding:5px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER LOCATION SELECTION STYLING  */
+
+.subs{
+  text-decoration: none;
+  padding:5px;
+  margin-left:-30px;
+  border: none;
+  outline: 0px;
+  color:black;  
+}
+
+.subs select{
+  border: 0 !important;  
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  background-color: rgb(195, 191, 191);
+  width: 100px; 
+  text-indent: 1px; 
+  text-overflow: ""; 
+  color: #000000;
+  padding: 5px;
+ 
+  border-radius: 5px;
+
+}
+
+.location {
+  border: none;
+  outline: 0px;
+  color:black;
+
+}
+
+/* FOOTER STYLING  */
+
+ .location-item a .subs{
+  opacity:0;
+}
+/* FOOTER STYLING  */
+
+
+.location-item a:hover .subs{
+  opacity:1;
+}
+.subs-2{
+  text-decoration: none;
+  padding:5px;
+  margin-left:-30px;
+  border: none;
+  outline: 0px;
+  
+  
+
+}
+.subs-2 select{
+  border: 0 !important;  
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  background-color: rgb(195, 191, 191);
+  width: 100px; 
+  text-indent: 1px; 
+  text-overflow: ""; 
+  color: #000000;
+  padding: 5px;
+ 
+  border-radius: 5px;
+ }
+
+ .sign-up-updates input{
+  border: 0 !important;  
+  -webkit-appearance: none;  
+  -moz-appearance: none; 
+  background-color: rgb(195, 191, 191);
+  width: 150px; 
+  text-indent: 1px; 
+  text-overflow: ""; 
+  color: #000000;
+  padding: 5px;
+ 
+  border-radius: 5px;
+
+ }
+
+ .sign-up-updates{
+   margin-top:60px;
+ }
+ footer ul  a{
+  text-decoration: none;
+  list-style: none;
+  color:rgb(250, 245, 245);
+}
+
+footer ul li a:hover{
+  color:grey;
+}
+
+
+.footer-extension{
+  background-color:rgb(41, 36, 36);
+  color:rgb(189, 190, 189);
+  
+  
+}
+
+
+
+
+
+
